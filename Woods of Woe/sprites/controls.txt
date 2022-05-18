@@ -1,0 +1,44 @@
+<HEADER>
+frames 1
+width 38
+height 31
+color green
+slowdown 0
+</HEADER>
+<BODY>
+WOODS OF WOE                          
+                                      
+A game by Emily Austin and James Flynn
+                                      
+                                      
+                                      
+CONTROLS:                             
+                                      
+                                      
+Start Screen:                         
+                                      
+Any key but Q or C: start game        
+                                      
+C: View controls                      
+                                      
+                                      
+Overworld:                            
+                                      
+WASD: move                            
+                                      
+                                      
+Combat:                               
+                                      
+A: Attack                             
+                                      
+D: Defend(half incoming damage)       
+                                      
+                                      
+At any time:                          
+                                      
+Q: Quit game                          
+end
+</BODY>
+<FOOTER>
+version 1
+</FOOTER>

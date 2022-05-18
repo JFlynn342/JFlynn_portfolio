@@ -1,0 +1,161 @@
+SRM::startUp(): Successfully started.
+SRM::loadSprite(): Loading sprite 'sprites/Rock.txt'.
+SRM::loadSprite(): Opened file 'sprites/Rock.txt'.
+	      Frames: 1
+	       Width: 2
+	      Height: 1
+	    Slowdown: 0
+	       Color: red
+SRM::loadSprite(): Sprite 'rock' loaded.
+SRM::loadSprite(): Loading sprite 'sprites/Tree.txt'.
+SRM::loadSprite(): Opened file 'sprites/Tree.txt'.
+	      Frames: 1
+	       Width: 7
+	      Height: 4
+	    Slowdown: 0
+	       Color: green
+SRM::loadSprite(): Sprite 'tree' loaded.
+SRM::loadSprite(): Loading sprite 'sprites/Bush.txt'.
+SRM::loadSprite(): Opened file 'sprites/Bush.txt'.
+	      Frames: 1
+	       Width: 8
+	      Height: 6
+	    Slowdown: 0
+	       Color: green
+SRM::loadSprite(): Sprite 'bush' loaded.
+SRM::loadSprite(): Loading sprite 'sprites/Grass.txt'.
+SRM::loadSprite(): Opened file 'sprites/Grass.txt'.
+	      Frames: 1
+	       Width: 9
+	      Height: 1
+	    Slowdown: 0
+	       Color: green
+SRM::loadSprite(): Sprite 'grass' loaded.
+SRM::loadSprite(): Loading sprite 'sprites/Hero.txt'.
+SRM::loadSprite(): Opened file 'sprites/Hero.txt'.
+	      Frames: 1
+	       Width: 3
+	      Height: 3
+	    Slowdown: 0
+	       Color: blue
+SRM::loadSprite(): Sprite 'hero' loaded.
+SRM::loadSprite(): Loading sprite 'sprites/hero-spr.txt'.
+SRM::loadSprite(): Opened file 'sprites/hero-spr.txt'.
+	      Frames: 2
+	       Width: 7
+	      Height: 4
+	    Slowdown: 30
+	       Color: yellow
+SRM::loadSprite(): Sprite 'hero_combat' loaded.
+SRM::loadSprite(): Loading sprite 'sprites/goblin.txt'.
+SRM::loadSprite(): Opened file 'sprites/goblin.txt'.
+	      Frames: 2
+	       Width: 9
+	      Height: 5
+	    Slowdown: 30
+	       Color: green
+SRM::loadSprite(): Sprite 'goblin' loaded.
+SRM::loadSprite(): Loading sprite 'sprites/battle.txt'.
+SRM::loadSprite(): Opened file 'sprites/battle.txt'.
+	      Frames: 1
+	       Width: 80
+	      Height: 24
+	    Slowdown: 0
+	       Color: red
+SRM::loadSprite(): Sprite 'battle' loaded.
+SRM::loadSprite(): Loading sprite 'sprites/zombie.txt'.
+SRM::loadSprite(): Opened file 'sprites/zombie.txt'.
+	      Frames: 2
+	       Width: 4
+	      Height: 4
+	    Slowdown: 30
+	       Color: green
+SRM::loadSprite(): Sprite 'zombie' loaded.
+SRM::loadSprite(): Loading sprite 'sprites/knight.txt'.
+SRM::loadSprite(): Opened file 'sprites/knight.txt'.
+	      Frames: 2
+	       Width: 8
+	      Height: 4
+	    Slowdown: 30
+	       Color: blue
+SRM::loadSprite(): Sprite 'knight' loaded.
+SRM::loadSprite(): Loading sprite 'sprites/wizard.txt'.
+SRM::loadSprite(): Opened file 'sprites/wizard.txt'.
+	      Frames: 2
+	       Width: 7
+	      Height: 7
+	    Slowdown: 30
+	       Color: blue
+SRM::loadSprite(): Sprite 'wizard' loaded.
+SRM::loadSprite(): Loading sprite 'sprites/start-screen.txt'.
+SRM::loadSprite(): Opened file 'sprites/start-screen.txt'.
+	      Frames: 1
+	       Width: 52
+	      Height: 19
+	    Slowdown: 0
+	       Color: green
+SRM::loadSprite(): Sprite 'start-screen' loaded.
+SRM::loadSprite(): Loading sprite 'sprites/controls.txt'.
+SRM::loadSprite(): Opened file 'sprites/controls.txt'.
+	      Frames: 1
+	       Width: 38
+	      Height: 31
+	    Slowdown: 0
+	       Color: green
+SRM::loadSprite(): Sprite 'controls' loaded.
+Object: id = 0
+Object: id = 1
+Object: id = 2
+Object: id = 3
+Object: id = 4
+Object: id = 5
+Object: id = 6
+Object: id = 7
+Object: id = 8
+Object: id = 9
+Object: id = 10
+Object: id = 11
+Object: id = 12
+Object: id = 13
+Object: id = 14
+Object: id = 15
+Object: id = 16
+Object: id = 17
+Object: id = 18
+Object: id = 19
+Object: id = 20
+Object: id = 21
+Object: id = 22
+Object: id = 23
+Object: id = 24
+Object: id = 25
+Object: id = 26
+Object: id = 27
+Object: id = 28
+Object: id = 29
+The Hero deals 2 damage
+Object: id = 30
+The Hero deals 1 damage
+Object: id = 31
+The Hero deals 1 damage
+Object: id = 32
+The Hero deals 2 damage
+Object: id = 33
+The Hero deals 2 damage
+Enemy was defeated
+Object: id = 34
+Object: id = 35
+Object: id = 36
+Object: id = 37
+Object: id = 38
+A Goblin appears!
+The Hero deals 2 damage
+Object: id = 39
+The Hero deals 2 damage
+Object: id = 40
+The Hero deals 1 damage
+Object: id = 41
+The Hero deals 1 damage
+Object: id = 42
+The Hero deals 1 damage
+Enemy was defeated

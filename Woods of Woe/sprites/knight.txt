@@ -1,0 +1,22 @@
+<HEADER>
+frames 2
+width 8
+height 4
+color blue
+slowdown 30
+</HEADER>
+<BODY>
+   O    
+|--|--| 
+|  A  | 
+| / \[=]
+end
+|  O    
+|--|--| 
+|  A  | 
+  / \[=]
+end
+</BODY>
+<FOOTER>
+version 1
+</FOOTER>

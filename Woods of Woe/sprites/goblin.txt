@@ -1,0 +1,24 @@
+<HEADER>
+frames 2
+width 9
+height 5
+color green
+slowdown 30
+</HEADER>
+<BODY>
+    ___  
+  <(' ')>
+---}-|-  
+     A   
+    / \  
+end
+\   __   
+(\<('')> 
+  --|-   
+    A    
+   / \   
+end
+</BODY>
+<FOOTER>
+version 1
+</FOOTER>

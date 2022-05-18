@@ -1,0 +1,28 @@
+<HEADER>
+frames 2
+width 7
+height 7
+color blue
+slowdown 30
+</HEADER>
+<BODY>
+   A   
+  /_\  
+ /___\ 
+   O  o
+*--|--|
+   A  |
+  / \ |
+end
+   |   
+  /|\  
+ /_o_\ 
+ / O\  
+/--|-\ 
+   A  \
+  / \  
+end
+</BODY>
+<FOOTER>
+version 1
+</FOOTER>

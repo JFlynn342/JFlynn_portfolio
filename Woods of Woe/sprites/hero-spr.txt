@@ -1,0 +1,22 @@
+<HEADER>
+frames 2
+width 7
+height 4
+color yellow
+slowdown 30
+</HEADER>
+<BODY>
+   O  |
+0--|--T
+   A   
+  / \  
+end
+   O   
+0--|+--
+   A   
+  / \  
+end
+</BODY>
+<FOOTER>
+version 1
+</FOOTER>
