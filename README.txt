@@ -6,3 +6,7 @@ two weeks were spent making the game itself.
 Unfinished Business was a 2D platformer which was my senior year capstone project. I created it with four other students, only one of
 which was also a programmer. My contributions included most of the combat mechanics, as well as the programming of the entire character 
 controller from scratch (PlayerBase.cs).
+
+COMING SOON:
+
+Another custom game engine project!
