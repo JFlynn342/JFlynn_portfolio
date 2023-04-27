@@ -1,0 +1,151 @@
+{
+  "Name": "Chonky Raccoon Studios",
+  "Type": "Table",
+  "Children": [
+    {
+      "Name": "Leads",
+      "Type": "Table",
+      "Children": [
+        {
+          "Name": "Peyton",
+          "Type": "String",
+          "Value": "Peyton Ryan"
+        },
+        {
+          "Name": "Jonathan",
+          "Type": "String",
+          "Value": "Jonathan Conrad"
+        },
+        {
+          "Name": "Zwick",
+          "Type": "String",
+          "Value": "Christian Zwick"
+        },
+        {
+          "Name": "Abhishek",
+          "Type": "String",
+          "Value": "Abhishek Keerthi"
+        },
+        {
+          "Name": "Kyle",
+          "Type": "String",
+          "Value": "Kyle Conway"
+        }
+      ]
+    },
+    {
+      "Name": "Artists",
+      "Type": "Table",
+      "Children": [
+        {
+          "Name": "Animators",
+          "Type": "Table",
+          "Children": [
+            {
+              "Name": "Ankur",
+              "Type": "String",
+              "Value": "Ankur Dodia"
+            }
+          ]
+        },
+        {
+          "Name": "3D Artists",
+          "Type": "Table",
+          "Children": [
+            {
+              "Name": "Meaghan",
+              "Type": "String",
+              "Value": "Meaghan Archer"
+            },
+            {
+              "Name": "Charlie",
+              "Type": "String",
+              "Value": "Charlie Price"
+            }
+          ]
+        },
+        {
+          "Name": "Tech Artists",
+          "Type": "Table",
+          "Children": [
+            {
+              "Name": "Monica",
+              "Type": "String",
+              "Value": "Monica De Puy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Producers",
+      "Type": "String",
+      "Children": [
+        {
+          "Name": "Level Designers",
+          "Type": "Table",
+          "Children": [
+            {
+              "Name": "Dylan",
+              "Type": "String",
+              "Value": "Dylan Koch"
+            },
+            {
+              "Name": "Travis",
+              "Type": "String",
+              "Value": "Travis Kosier"
+            },
+            {
+              "Name": "Mariah",
+              "Type": "String",
+              "Value": "Mariah Sampson"
+            }
+          ]
+        },
+        {
+          "Name": "Tech Designers",
+          "Type": "Table",
+          "Children": [
+            {
+              "Name": "Mitchel",
+              "Type": "String",
+              "Value": "Mitchel Smith"
+            }
+          ]
+        },
+        {
+          "Name": "Project Managers",
+          "Type": "Table",
+          "Children": [
+            {
+              "Name": "Derek",
+              "Type": "String",
+              "Value": "Derek Gilberti"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Programmers",
+      "Type": "Table",
+      "Children": [
+        {
+          "Name": "Jimmy",
+          "Type": "String",
+          "Value": "Jimmy Flynn"
+        },
+        {
+          "Name": "Abish",
+          "Type": "String",
+          "Value":  "Abish Neelakanta"
+        },
+        {
+          "Name": "Eric",
+          "Type": "String",
+          "Value": "Eric Vilella"
+        }
+      ]
+    }
+  ]
+}

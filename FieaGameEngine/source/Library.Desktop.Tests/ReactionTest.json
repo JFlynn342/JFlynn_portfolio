@@ -1,0 +1,53 @@
+{
+  "Name": "FooObject",
+  "Type": "Table",
+  "Class": "GameObjectFoo",
+  "Children": [
+    {
+      "Name": "Value",
+      "Type": "Integer",
+      "Value": 0
+    },
+    {
+      "Name": "Actions",
+      "Type": "Table",
+      "Children": [
+        {
+          "Name": "EventAction",
+          "Type": "Table",
+          "Class": "ActionEvent",
+          "Children": [
+            {
+              "Name": "Subtype",
+              "Type": "Integer",
+              "Value": 2
+            },
+            {
+              "Name": "ExtraStuff",
+              "Type": "Integer",
+              "Value": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Reactions",
+      "Type": "Table",
+      "Children": [
+        {
+          "Name": "Reaction",
+          "Type": "Table",
+          "Class": "ReactionAttributed",
+          "Children": [
+            {
+              "Name": "Subtype",
+              "Type": "Integer",
+              "Value": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

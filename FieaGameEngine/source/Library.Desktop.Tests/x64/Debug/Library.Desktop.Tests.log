@@ -1,0 +1,1 @@
+﻿C:\Dev\Students\CH19\Jimmy.Flynn\Prog2\source\Library.Desktop.Tests\Library.Desktop.Tests.vcxproj(75,5): error MSB4019: The imported project "C:\Dev\Students\CH19\Jimmy.Flynn\Prog2\source\Shared.props" was not found. Confirm that the expression in the Import declaration "..\Shared.props" is correct, and that the file exists on disk.

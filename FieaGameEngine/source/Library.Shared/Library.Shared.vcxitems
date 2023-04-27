@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{1666f1e3-a403-41e6-ada9-98cd6bfb744f}</ItemsProjectGuid>
+    <ItemsSccProjectName />
+    <ItemsSccAuxPath />
+    <ItemsSccLocalPath />
+    <ItemsSccProvider />
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Action.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Attributed.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Datum.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DefaultEquality.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DefaultHash.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Event.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)EventMessageAttributed.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameClock.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameState.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameTime.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)HashMap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Factory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ParseCoordinator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Reaction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ReactionAttributed.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)RTTI.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Scope.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SList.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TableParseHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Vector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Datum.inl" />
+    <None Include="$(MSBuildThisFileDirectory)DefaultEquality.inl" />
+    <None Include="$(MSBuildThisFileDirectory)DefaultHash.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Event.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Factory.inl" />
+    <None Include="$(MSBuildThisFileDirectory)HashMap.inl" />
+    <None Include="$(MSBuildThisFileDirectory)RTTI.inl" />
+    <None Include="$(MSBuildThisFileDirectory)SList.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Vector.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Action.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Attributed.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Datum.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Event.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)EventMessageAttributed.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameClock.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameState.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameTime.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ParseCoordinator.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Reaction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ReactionAttributed.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)RTTI.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Scope.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TableParseHelper.cpp" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,95 @@
+
+{
+  "Name": "FooObject",
+  "Type": "Table",
+  "Class": "GameObjectFoo",
+  "Children": [
+    {
+      "Name": "Value",
+      "Type": "Integer",
+      "Value": 0
+    },
+    {
+      "Name": "Actions",
+      "Type": "Table",
+      "Children": [
+        {
+          "Name": "SingleFooAction",
+          "Type": "Table",
+          "Class": "ActionFoo"
+        },
+        {
+          "Name": "List",
+          "Type": "Table",
+          "Class": "ActionList",
+          "Children": [
+            {
+              "Name": "Actions",
+              "Type": "Table",
+              "Children": [
+                {
+                  "Name": "ListedFooAction1",
+                  "Type": "Table",
+                  "Class": "ActionFoo"
+                },
+                {
+                  "Name": "ListedFooAction2",
+                  "Type": "Table",
+                  "Class": "ActionFoo"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "TrueIf",
+          "Type": "Table",
+          "Class": "ActionIf",
+          "Children": [
+            {
+              "Name": "Condition",
+              "Type": "Integer",
+              "Value": 1
+            },
+            {
+              "Name": "Then",
+              "Type": "Table",
+              "Children": [
+                {
+                  "Name": "SingleFooAction",
+                  "Type": "Table",
+                  "Class": "ActionFoo"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "FalseIf",
+          "Type": "Table",
+          "Class": "ActionIf",
+          "Children": [
+            {
+              "Name": "Condition",
+              "Type": "Integer",
+              "Value": 0
+            },
+            {
+              "Name": "Else",
+              "Type": "Table",
+              "Children": [
+                {
+                  "Name": "SingleFooAction",
+                  "Type": "Table",
+                  "Class": "ActionFoo"
+                }
+              ]
+            }
+          ]
+        }
+
+      ]
+
+    }
+  ]
+}

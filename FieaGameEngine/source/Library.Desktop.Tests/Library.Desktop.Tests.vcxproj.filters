@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Support">
+      <UniqueIdentifier>{f415f118-e688-4d85-9b26-d781397f81cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{50ae4ef0-fb3d-456c-b715-99741860d727}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SListTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Foo.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="HashTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="HashMapTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Bar.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="EqualityTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="DatumTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="ScopeTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributedFoo.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributedTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="IntegerParseHelper.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="ParseCoordinatorTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TableParseTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectFoo.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionFoo.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="EventTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="SubscriberFoo.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="ReactionTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Foo.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="StringConversions.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Bar.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributedFoo.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="IntegerParseHelper.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectFoo.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionFoo.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="SubscriberFoo.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="ChonkyRaccoon.json">
+      <Filter>Tests</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="IntegerTest.json">
+      <Filter>Tests</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ExtraTableTests.json">
+      <Filter>Tests</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ActionTest.json">
+      <Filter>Tests</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ReactionTest.json">
+      <Filter>Tests</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+</Project>

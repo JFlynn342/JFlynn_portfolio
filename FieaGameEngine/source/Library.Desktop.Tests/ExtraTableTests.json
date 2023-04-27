@@ -1,0 +1,51 @@
+{
+  "Name": "TableOfThings",
+  "Type": "Table",
+  "Children": [
+    {
+      "Name": "SomeInt",
+      "Type": "Integer",
+      "Value": 70
+    },
+    {
+      "Name": "SomeFloat",
+      "Type": "Float",
+      "Value": 4.5
+    },
+    {
+      "Name": "SomeVector",
+      "Type": "Vector",
+      "Value": "vec vec4(5.0,4.7,3.6,2.9)"
+    },
+    {
+      "Name": "SomeMatrix",
+      "Type": "Matrix",
+      "Value": "mat mat4(vec4(5,0,0,0),vec4(6,0,0,0),vec4(7,0,0,0),vec4(8,0,0,0))"
+    },
+    {
+      "Name": "IntArray",
+      "Type": "Integer",
+      "Value": [ 5, 4, 3, 2 ]
+    },
+    {
+      "Name": "FloatArray",
+      "Type": "Float",
+      "Value": [ 7.2, 3.6, 1.8, 2.9 ]
+    },
+    {
+      "Name": "VectorArray",
+      "Type": "Vector",
+      "Value": [ "vec vec4(5,0,0,0)", "vec vec4(6,0,0,0)", "vec vec4(7,0,0,0)", "vec vec4(8,0,0,0)" ]
+    },
+    {
+      "Name": "MatrixArray",
+      "Type": "Matrix",
+      "Value": [ "mat mat4(vec4(5,0,0,0),vec4(6,0,0,0),vec4(7,0,0,0),vec4(8,0,0,0))", "mat mat4(vec4(1,0,0,0),vec4(2,0,0,0),vec4(3,0,0,0),vec4(4,0,0,0))" ]
+    },
+    {
+      "Name": "StringArray",
+      "Type": "String",
+      "Value": ["this", "is", "a", "string", "array"]
+    }
+  ]
+}
