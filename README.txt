@@ -7,4 +7,6 @@ Unfinished Business was a 2D platformer which was my senior year capstone projec
 which was also a programmer. My contributions included most of the combat mechanics, as well as the programming of the entire character 
 controller from scratch (PlayerBase.cs).
 
-The Fiea Game Engine is another custom game engine project that I worked on in UCF's Interactive Entertainment MS program. It differs from my undergraduate game engine project in that I both rewrote several standard library containers, including vector and unordered_map, and implemented support for data-driven scripting through a custom JSON parser.
+The Fiea Game Engine is another custom game engine project that I worked on in UCF's Interactive Entertainment MS program. 
+It differs from my undergraduate game engine project in that I both rewrote several standard library containers, including vector and unordered_map, 
+and implemented support for data-driven scripting through a custom JSON parser.
