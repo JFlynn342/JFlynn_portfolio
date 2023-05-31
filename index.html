@@ -18,7 +18,13 @@
     last hurdle: I need to roll back my Windows SDK version in order for it to work with the framework I'm using.
 </p>
 <p>
-    5/29/23: I DID IT!!! WinRT is not an easy beast, but I finally figured out how to set up the dependencies properly (SDK rollback was not the solution, but better package management was)
+    5/29/23: I DID IT!!! WinRT is not an easy beast, but I finally figured out how to set up the dependencies properly (SDK rollback was not the solution, but better package management was). 
+</p>
+<p>
+    5/31/23: This past week was a deep dive into Visual Studio dependency management for me. I figured out how to share include files across multiple projects, 
+    as well as how to manage some of the native Windows libraries. Because of this, I was able to set up my project as an adjacent directory so that my code is not directly
+    comingled with the rendering framework code. Now that I have the project building, my next objective is to switch out animations instantaneously (step interpolation), which means
+    creating a mechanism to define a "Transition", as well as a way to run it.
 </p>
 </body>
 </html>
