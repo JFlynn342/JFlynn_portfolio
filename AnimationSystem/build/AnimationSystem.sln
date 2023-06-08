@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Library.Shared", "..\source
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Library.Desktop", "..\source\Library.Desktop\Library.Desktop.vcxproj", "{AC77ECF1-1A7C-4399-B24A-78090042E3CB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "System.Desktop", "..\source\System.Desktop\System.Desktop.vcxproj", "{3B359B83-D0BC-4EA9-A4AF-88FB9697DB1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -29,6 +31,14 @@ Global
 		{AC77ECF1-1A7C-4399-B24A-78090042E3CB}.Release|x64.Build.0 = Release|x64
 		{AC77ECF1-1A7C-4399-B24A-78090042E3CB}.Release|x86.ActiveCfg = Release|Win32
 		{AC77ECF1-1A7C-4399-B24A-78090042E3CB}.Release|x86.Build.0 = Release|Win32
+		{3B359B83-D0BC-4EA9-A4AF-88FB9697DB1E}.Debug|x64.ActiveCfg = Debug|x64
+		{3B359B83-D0BC-4EA9-A4AF-88FB9697DB1E}.Debug|x64.Build.0 = Debug|x64
+		{3B359B83-D0BC-4EA9-A4AF-88FB9697DB1E}.Debug|x86.ActiveCfg = Debug|Win32
+		{3B359B83-D0BC-4EA9-A4AF-88FB9697DB1E}.Debug|x86.Build.0 = Debug|Win32
+		{3B359B83-D0BC-4EA9-A4AF-88FB9697DB1E}.Release|x64.ActiveCfg = Release|x64
+		{3B359B83-D0BC-4EA9-A4AF-88FB9697DB1E}.Release|x64.Build.0 = Release|x64
+		{3B359B83-D0BC-4EA9-A4AF-88FB9697DB1E}.Release|x86.ActiveCfg = Release|Win32
+		{3B359B83-D0BC-4EA9-A4AF-88FB9697DB1E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

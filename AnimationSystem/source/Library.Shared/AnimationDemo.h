@@ -19,7 +19,7 @@ namespace Rendering
 {
 	class SkinnedModelMaterial;
 
-	class AnimationDemo final : public Library::DrawableGameComponent
+	class AnimationDemo : public Library::DrawableGameComponent
 	{
 	public:
 		AnimationDemo(Library::Game& game, const std::shared_ptr<Library::Camera>& camera);
@@ -27,7 +27,7 @@ namespace Rendering
 		AnimationDemo(AnimationDemo&&) = default;
 		AnimationDemo& operator=(const AnimationDemo&) = default;		
 		AnimationDemo& operator=(AnimationDemo&&) = default;
-		~AnimationDemo();
+		virtual ~AnimationDemo();
 
 		bool ManualAdvanceEnabled() const;
 		void SetManualAdvanceEnabled(bool enabled);
@@ -57,7 +57,7 @@ namespace Rendering
 		virtual void Update(const Library::GameTime& gameTime) override;
 		virtual void Draw(const Library::GameTime& gameTime) override;
 
-	private:
+	protected:
 		inline static const float RotationRate{ DirectX::XM_PI };
 
 		std::shared_ptr<SkinnedModelMaterial> mMaterial;

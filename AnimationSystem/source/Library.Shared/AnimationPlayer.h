@@ -4,7 +4,11 @@
 #include "MatrixHelper.h"
 #include <memory>
 #include <DirectXMath.h>
-
+#include <vector>
+#include <map>
+namespace Animation {
+	class LinearTransition;
+}
 namespace Library
 {
 	class GameTime;
@@ -16,7 +20,8 @@ namespace Library
     {
 		RTTI_DECLARATIONS(AnimationPlayer, GameComponent)
 
-    public:        
+    public:  
+		friend class Animation::LinearTransition;
 		AnimationPlayer(Game& game, std::shared_ptr<Model> model, bool interpolationEnabled = true);
 		AnimationPlayer(const AnimationPlayer&) = default;
 		AnimationPlayer(AnimationPlayer&&) = default;

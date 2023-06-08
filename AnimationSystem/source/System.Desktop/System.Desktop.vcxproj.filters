@@ -8,14 +8,94 @@
     <Filter Include="Source">
       <UniqueIdentifier>{720c0f53-a313-484c-b84d-bcd4940fbad0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Rendering">
+      <UniqueIdentifier>{cdb04002-a5b8-4faf-b19d-f97e846b8bd4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Program.cpp">
+    <ClCompile Include="Transition.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library.Desktop\UtilityWin32.cpp" />
+    <ClCompile Include="AnimationGame.cpp">
+      <Filter>Source\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator.cpp">
+      <Filter>Source\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Program.cpp">
+      <Filter>Source\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Library.Desktop\UtilityWin32.cpp">
+      <Filter>Source\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="LinearTransition.cpp" />
+    <ClCompile Include="StepTransition.cpp">
+      <Filter>Source\Rendering</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Library.Desktop\UtilityWin32.h" />
+    <ClInclude Include="StepTransition.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Transition.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationGame.h">
+      <Filter>Source\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Animator.h">
+      <Filter>Source\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Library.Desktop\UtilityWin32.h">
+      <Filter>Source\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearTransition.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="content\Models\DirectionalLightProxy.obj.bin">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="content\Models\RunningSoldier.dae.bin">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="content\Textures\Soldier.png">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="content\Shaders\BasicPS.cso">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="content\Shaders\BasicVS.cso">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="content\Shaders\BloomPS.cso">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="content\Shaders\DepthMapVS.cso">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="content\Shaders\DiffuseLightingPS.cso">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="content\Shaders\GaussianBlurPS.cso">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="content\Shaders\SkinnedModelVS.cso">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="content\Shaders\SkyboxPS.cso">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="content\Shaders\SkyboxVS.cso">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="content\Shaders\TexturedModelPS.cso">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="content\Shaders\TexturedModelVS.cso">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="content\Shaders\TexturedQuadPassThroughVS.cso">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>

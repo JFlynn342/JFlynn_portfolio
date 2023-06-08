@@ -5,6 +5,9 @@
   <PropertyGroup>
     <CustomBuildBeforeTargets>ClCompile</CustomBuildBeforeTargets>
   </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <RootNamespace>Library</RootNamespace>
+  </PropertyGroup>
   <ItemDefinitionGroup>
     <CustomBuildStep>
       <Command>IF EXIST "$(SharedPdb)" xcopy /Y /F "$(SharedPdb)" "$(IntDir)"
