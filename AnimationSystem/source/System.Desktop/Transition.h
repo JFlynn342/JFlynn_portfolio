@@ -14,9 +14,9 @@ namespace Animation {
 		Transition(Library::AnimationPlayer* player, Library::Game& game, const std::shared_ptr<Library::AnimationClip>& from, const std::shared_ptr<Library::AnimationClip>& to);
 		virtual ~Transition() = default;
 		Transition(const Transition&) = delete;
-		Transition& operator=(Transition& other) = delete;
-		Transition(Transition&&) = default;
-		Transition& operator=(Transition&&) = default;
+		Transition operator=(Transition& other) = delete;
+		Transition(Transition&&) = delete;
+		Transition operator=(Transition&&) = delete;
 		/// <summary>
 		/// Begins execution of the Transition
 		/// </summary>
