@@ -66,20 +66,22 @@ namespace Animation {
 		mAnimationPlayer = make_unique<Library::AnimationPlayer>(*mGame, mSkinnedModel, false);
 		mAnimationPlayer->StartClip(mSkinnedModel->Animations().at(0));
 		mMaterial->UpdateBoneTransforms(mAnimationPlayer->BoneTransforms());
-		mAnimationPlayer->CurrentClip();
 	   
-		_transitions.push_back(make_shared<StepTransition>(mAnimationPlayer.get(), *mGame, mSkinnedModel->Animations().at(0), mSkinnedModel->Animations().at(1)));
-		_transitions.push_back(make_shared<StepTransition>(mAnimationPlayer.get(), *mGame, mSkinnedModel->Animations().at(1), mSkinnedModel->Animations().at(0)));
-		//_transitions.push_back(make_shared<LinearTransition>(mAnimationPlayer.get(), *mGame,
-		//	mSkinnedModel->Animations().at(1),
-		//	mSkinnedModel->Animations().at(0),
-		//	2.0f, 0));
-		//_transitions.push_back(make_shared<LinearTransition>(mAnimationPlayer.get(), *mGame,
-		//	mSkinnedModel->Animations().at(0),
-		//	mSkinnedModel->Animations().at(1),
-		//	2.0f, 0));
-
+		//_transitions.push_back(make_shared<StepTransition>(mAnimationPlayer.get(), *mGame, mSkinnedModel->Animations().at(0), mSkinnedModel->Animations().at(1)));
+		//_transitions.push_back(make_shared<StepTransition>(mAnimationPlayer.get(), *mGame, mSkinnedModel->Animations().at(1), mSkinnedModel->Animations().at(0)));
+		_transitions.push_back(make_shared<LinearTransition>(mAnimationPlayer.get(), *mGame,
+			mSkinnedModel->Animations().at(0),
+			mSkinnedModel->Animations().at(1),
+			2.0f, 0));
+		_transitions.push_back(make_shared<LinearTransition>(mAnimationPlayer.get(), *mGame,
+			mSkinnedModel->Animations().at(1),
+			mSkinnedModel->Animations().at(0),
+			2.0f, 1));
 		
+
+		for (auto& t : _transitions) {
+			t->Initialize();
+		}
 
 		mProxyModel = make_unique<ProxyModel>(*mGame, mCamera, "Models\\DirectionalLightProxy.obj.bin"s, 0.5f);
 		mProxyModel->Initialize();
@@ -97,7 +99,13 @@ namespace Animation {
 
 	void Animator::Update(const Library::GameTime& time)
 	{
+		for (const shared_ptr<Transition>& t : _transitions) {
+
+			t->Update(time);
+		}
+		
 		AnimationDemo::Update(time);
+		
 	}
 	const std::vector<std::shared_ptr<Transition>>& Animator::Transitions()
 	{
@@ -105,6 +113,21 @@ namespace Animation {
 	}
 	void Animator::Draw(const Library::GameTime& time)
 	{
-		AnimationDemo::Draw(time);
+		if (mUpdateMaterial)
+		{
+			const XMMATRIX worldMatrix = XMLoadFloat4x4(&mWorldMatrix);
+			const XMMATRIX wvp = XMMatrixTranspose(worldMatrix * mCamera->ViewProjectionMatrix());
+			mMaterial->UpdateTransforms(wvp, XMMatrixTranspose(worldMatrix));
+			mUpdateMaterial = false;
+		}
+
+		if (mUpdateMaterialBoneTransforms)
+		{
+			mMaterial->UpdateBoneTransforms(mAnimationPlayer->BoneTransforms());
+			mUpdateMaterialBoneTransforms = false;
+		}
+
+		mMaterial->DrawIndexed(not_null<ID3D11Buffer*>(mVertexBuffer.get()), not_null<ID3D11Buffer*>(mIndexBuffer.get()), mIndexCount);
+		mProxyModel->Draw(time);
 	}
 }

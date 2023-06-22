@@ -11,11 +11,14 @@
     <Filter Include="Source\Rendering">
       <UniqueIdentifier>{cdb04002-a5b8-4faf-b19d-f97e846b8bd4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Utility">
+      <UniqueIdentifier>{90c1c8b6-074e-4ffc-8998-3d6df6487927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Transitions">
+      <UniqueIdentifier>{45886ed6-04f2-4688-a0f4-2d2dc7678bda}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Transition.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="AnimationGame.cpp">
       <Filter>Source\Rendering</Filter>
     </ClCompile>
@@ -28,18 +31,23 @@
     <ClCompile Include="..\Library.Desktop\UtilityWin32.cpp">
       <Filter>Source\Rendering</Filter>
     </ClCompile>
-    <ClCompile Include="LinearTransition.cpp" />
+    <ClCompile Include="LinearTransition.cpp">
+      <Filter>Source\Transitions</Filter>
+    </ClCompile>
     <ClCompile Include="StepTransition.cpp">
-      <Filter>Source\Rendering</Filter>
+      <Filter>Source\Transitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Transition.cpp">
+      <Filter>Source\Transitions</Filter>
+    </ClCompile>
+    <ClCompile Include="BezierCurve.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="BezierTransition.cpp">
+      <Filter>Source\Transitions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="StepTransition.h">
-      <Filter>Source</Filter>
-    </ClInclude>
-    <ClInclude Include="Transition.h">
-      <Filter>Source</Filter>
-    </ClInclude>
     <ClInclude Include="AnimationGame.h">
       <Filter>Source\Rendering</Filter>
     </ClInclude>
@@ -49,7 +57,21 @@
     <ClInclude Include="..\Library.Desktop\UtilityWin32.h">
       <Filter>Source\Rendering</Filter>
     </ClInclude>
-    <ClInclude Include="LinearTransition.h" />
+    <ClInclude Include="LinearTransition.h">
+      <Filter>Source\Transitions</Filter>
+    </ClInclude>
+    <ClInclude Include="StepTransition.h">
+      <Filter>Source\Transitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Transition.h">
+      <Filter>Source\Transitions</Filter>
+    </ClInclude>
+    <ClInclude Include="BezierCurve.h">
+      <Filter>Source\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="BezierTransition.h">
+      <Filter>Source\Transitions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="content\Models\DirectionalLightProxy.obj.bin">
