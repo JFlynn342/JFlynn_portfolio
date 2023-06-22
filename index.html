@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>
+    Hello!
+</h1>
+<h2>
+    Welcome to my dev blog. Over the next few months, I will be describing my process as I develop a real-time
+    animation system in C++!
+</h2>
+<p>
+    5/22/23: Just finished the planning phase. Everything feels nice and doable.
+    Hopefully two weeks for Bezier curves is enough, that feels like it could be a bit
+    daunting at first.
+</p>
+<p>
+    5/27/23: Been having trouble setting up dependencies for the past two weeks and I finally figured out what should be the
+    last hurdle: I need to roll back my Windows SDK version in order for it to work with the framework I'm using.
+</p>
+<p>
+    5/29/23: I DID IT!!! WinRT is not an easy beast, but I finally figured out how to set up the dependencies properly (SDK rollback was not the solution, but better package management was). 
+</p>
+<p>
+    5/31/23: This past week was a deep dive into Visual Studio dependency management for me. I figured out how to share include files across multiple projects, 
+    as well as how to manage some of the native Windows libraries. Because of this, I was able to set up my project as an adjacent directory so that my code is not directly
+    comingled with the rendering framework code. Now that I have the project building, my next objective is to switch out animations instantaneously (step interpolation), which means
+    creating a mechanism to define a "Transition", as well as a way to run it.
+</p>
+<p>
+    6/8/2023: I can toggle between animations with the step transition now! The Transition abstract base class I created implements functionality for "linking" two animations, and I made sure to have the execution
+    return a boolean if it runs so that I can ensure that only one transition at most can execute on each update frame. The StepTransition derived class extends the base functionality by adding an implementation of Run() 
+    which swaps out the origin pose for the target pose on the active animation player. However, linear transitions are still a bit rough. Whenever I try to alter the bone transforms to blend between the original
+    transforms and those at the target frame on the other clip, the model geometry explodes. I have two suspicions on this: I am either using a bad interpolation formula 
+    (currently origin + ((target - origin) * alpha) where alpha = deltaTime/duration, performed on all floats in the transform matrix), or I'm not projecting the coordinates properly after the values
+    are changed. 
+</p>
+</body>
+</html>

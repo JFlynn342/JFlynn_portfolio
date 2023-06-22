@@ -8,7 +8,6 @@
 #include <map>
 namespace Animation {
 	class LinearTransition;
-	class BezierTransition;
 }
 namespace Library
 {
@@ -23,7 +22,6 @@ namespace Library
 
     public:  
 		friend class Animation::LinearTransition;
-		friend class Animation::BezierTransition;
 		AnimationPlayer(Game& game, std::shared_ptr<Model> model, bool interpolationEnabled = true);
 		AnimationPlayer(const AnimationPlayer&) = default;
 		AnimationPlayer(AnimationPlayer&&) = default;

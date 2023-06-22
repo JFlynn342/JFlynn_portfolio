@@ -2,7 +2,6 @@
 
 #include "RTTI.h"
 #include <DirectXMath.h>
-#include <memory>
 #include <vector>
 
 namespace Library
