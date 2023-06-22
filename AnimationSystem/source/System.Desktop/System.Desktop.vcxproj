@@ -23,6 +23,8 @@
     <ClCompile Include="..\Library.Desktop\UtilityWin32.cpp" />
     <ClCompile Include="AnimationGame.cpp" />
     <ClCompile Include="Animator.cpp" />
+    <ClCompile Include="BezierCurve.cpp" />
+    <ClCompile Include="BezierTransition.cpp" />
     <ClCompile Include="LinearTransition.cpp" />
     <ClCompile Include="Program.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
@@ -37,6 +39,8 @@
     <ClInclude Include="..\Library.Desktop\UtilityWin32.h" />
     <ClInclude Include="AnimationGame.h" />
     <ClInclude Include="Animator.h" />
+    <ClInclude Include="BezierCurve.h" />
+    <ClInclude Include="BezierTransition.h" />
     <ClInclude Include="LinearTransition.h" />
     <ClInclude Include="StepTransition.h" />
     <ClInclude Include="Transition.h" />

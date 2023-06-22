@@ -34,7 +34,7 @@ namespace Library
 		std::uint32_t KeyframeCount{ 0 };
 	};
 
-    class AnimationClip final
+    class AnimationClip
     {
     public:
 		AnimationClip(Model& model, InputStreamHelper& streamHelper);
@@ -63,7 +63,7 @@ namespace Library
 
 		void Save(OutputStreamHelper& streamHelper);
 
-    private:
+    protected:
 		void Load(Model& model, InputStreamHelper& streamHelper);
 
 		AnimationClipData mData;
