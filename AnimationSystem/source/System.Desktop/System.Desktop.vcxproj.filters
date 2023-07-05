@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+<<<<<<< Updated upstream
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -119,5 +120,50 @@
     <CopyFileToFolders Include="content\Shaders\TexturedQuadPassThroughVS.cso">
       <Filter>Resource Files</Filter>
     </CopyFileToFolders>
+=======
+    <ClCompile Include="..\Library.Desktop\UtilityWin32.cpp" />
+    <ClCompile Include="AnimationGame.cpp" />
+    <ClCompile Include="Animator.cpp" />
+    <ClCompile Include="LinearTransition.cpp" />
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="StateMachine.cpp" />
+    <ClCompile Include="StateMachineGenerator.cpp" />
+    <ClCompile Include="StepTransition.cpp" />
+    <ClCompile Include="Transition.cpp" />
+    <ClCompile Include="TransitionRule.cpp" />
+    <ClCompile Include="BezierCurve.cpp" />
+    <ClCompile Include="BezierTransition.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Library.Desktop\UtilityWin32.h" />
+    <ClInclude Include="AnimationGame.h" />
+    <ClInclude Include="Animator.h" />
+    <ClInclude Include="LinearTransition.h" />
+    <ClInclude Include="StateMachine.h" />
+    <ClInclude Include="StateMachineGenerator.h" />
+    <ClInclude Include="StepTransition.h" />
+    <ClInclude Include="Transition.h" />
+    <ClInclude Include="TransitionRule.h" />
+    <ClInclude Include="BezierCurve.h" />
+    <ClInclude Include="BezierTransition.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="content\Models\DirectionalLightProxy.obj.bin" />
+    <CopyFileToFolders Include="content\Models\RunningSoldier.dae.bin" />
+    <CopyFileToFolders Include="content\Textures\Soldier.png" />
+    <CopyFileToFolders Include="content\Shaders\BasicPS.cso" />
+    <CopyFileToFolders Include="content\Shaders\BasicVS.cso" />
+    <CopyFileToFolders Include="content\Shaders\BloomPS.cso" />
+    <CopyFileToFolders Include="content\Shaders\DepthMapVS.cso" />
+    <CopyFileToFolders Include="content\Shaders\DiffuseLightingPS.cso" />
+    <CopyFileToFolders Include="content\Shaders\GaussianBlurPS.cso" />
+    <CopyFileToFolders Include="content\Shaders\SkinnedModelVS.cso" />
+    <CopyFileToFolders Include="content\Shaders\SkyboxPS.cso" />
+    <CopyFileToFolders Include="content\Shaders\SkyboxVS.cso" />
+    <CopyFileToFolders Include="content\Shaders\TexturedModelPS.cso" />
+    <CopyFileToFolders Include="content\Shaders\TexturedModelVS.cso" />
+    <CopyFileToFolders Include="content\Shaders\TexturedQuadPassThroughVS.cso" />
+    <CopyFileToFolders Include="Test.json" />
+>>>>>>> Stashed changes
   </ItemGroup>
 </Project>

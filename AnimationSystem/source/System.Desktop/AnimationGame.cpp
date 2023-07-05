@@ -36,7 +36,10 @@ namespace Animation {
 
 		Game::Initialize();
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 		
 		camera->SetPosition(0.0f, 3.0f, 5.0f);
 	}
