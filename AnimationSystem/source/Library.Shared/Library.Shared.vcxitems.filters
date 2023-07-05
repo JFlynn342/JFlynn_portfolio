@@ -10,9 +10,6 @@
     <Filter Include="Lights">
       <UniqueIdentifier>{bec473ad-ca41-4754-a284-81f32a90099f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Misc">
-      <UniqueIdentifier>{c97b7661-1030-4734-84eb-f82234144c99}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Models">
       <UniqueIdentifier>{7dc6c8e9-0f15-4766-8382-f707f53570aa}</UniqueIdentifier>
     </Filter>
@@ -40,6 +37,9 @@
     <Filter Include="Content\ContentReaders">
       <UniqueIdentifier>{a7e4884d-bc69-46d0-94bc-ea6531266381}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Models\Misc">
+      <UniqueIdentifier>{c97b7661-1030-4734-84eb-f82234144c99}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Camera.cpp">
@@ -52,13 +52,13 @@
       <Filter>Cameras</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)FpsComponent.cpp">
-      <Filter>Misc</Filter>
+      <Filter>Models\Misc</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)GamePadComponent.cpp">
       <Filter>Input</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Grid.cpp">
-      <Filter>Misc</Filter>
+      <Filter>Models\Misc</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Light.cpp">
       <Filter>Lights</Filter>
@@ -88,13 +88,13 @@
       <Filter>Lights</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)ProxyModel.cpp">
-      <Filter>Misc</Filter>
+      <Filter>Models\Misc</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)ServiceContainer.cpp">
-      <Filter>Misc</Filter>
+      <Filter>Models\Misc</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Utility.cpp">
-      <Filter>Misc</Filter>
+      <Filter>Models\Misc</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)KeyboardComponent.cpp">
       <Filter>Input</Filter>
@@ -315,13 +315,13 @@
       <Filter>Cameras</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)FpsComponent.h">
-      <Filter>Misc</Filter>
+      <Filter>Models\Misc</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)GamePadComponent.h">
       <Filter>Input</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Grid.h">
-      <Filter>Misc</Filter>
+      <Filter>Models\Misc</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Light.h">
       <Filter>Lights</Filter>
@@ -351,16 +351,16 @@
       <Filter>Lights</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)ProxyModel.h">
-      <Filter>Misc</Filter>
+      <Filter>Models\Misc</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)RTTI.h">
-      <Filter>Misc</Filter>
+      <Filter>Models\Misc</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)ServiceContainer.h">
-      <Filter>Misc</Filter>
+      <Filter>Models\Misc</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Utility.h">
-      <Filter>Misc</Filter>
+      <Filter>Models\Misc</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)KeyboardComponent.h">
       <Filter>Input</Filter>
@@ -495,7 +495,7 @@
       <Filter>Materials</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)StopWatch.h">
-      <Filter>Misc</Filter>
+      <Filter>Models\Misc</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)FullScreenRenderTarget.h">
       <Filter>Graphics</Filter>
@@ -593,7 +593,7 @@
       <Filter>Helpers</Filter>
     </None>
     <None Include="$(MSBuildThisFileDirectory)StopWatch.inl">
-      <Filter>Misc</Filter>
+      <Filter>Models\Misc</Filter>
     </None>
     <None Include="$(MSBuildThisFileDirectory)Light.inl">
       <Filter>Lights</Filter>

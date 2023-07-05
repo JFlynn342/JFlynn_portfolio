@@ -11,9 +11,12 @@
 #include "AnimationPlayer.h"
 #include "AnimationClip.h"
 #include "BoneAnimation.h"
+#include "StateMachine.h"
+#include "StateMachineGenerator.h"
 #include "Keyframe.h"
 #include "StepTransition.h"
 #include "LinearTransition.h"
+#include "BezierTransition.h"
 #include <vector>
 
 using namespace Library;
@@ -24,12 +27,7 @@ using namespace DirectX;
 using namespace std::string_literals;
 
 bool NoTransitionsActive(Animation::Animator& animator) {
-	for (shared_ptr<Animation::Transition> t : animator.Transitions()) {
-		if (t->IsActive()) {
-			return false;
-		}
-	}
-	return true;
+	return animator.GetStateMachine().CurrentState() != nullptr;
 }
 
 void ModifyContent(Model& model) {
@@ -66,22 +64,25 @@ namespace Animation {
 		mAnimationPlayer = make_unique<Library::AnimationPlayer>(*mGame, mSkinnedModel, false);
 		mAnimationPlayer->StartClip(mSkinnedModel->Animations().at(0));
 		mMaterial->UpdateBoneTransforms(mAnimationPlayer->BoneTransforms());
+		mAnimationPlayer->CurrentClip();
 	   
-		//_transitions.push_back(make_shared<StepTransition>(mAnimationPlayer.get(), *mGame, mSkinnedModel->Animations().at(0), mSkinnedModel->Animations().at(1)));
-		//_transitions.push_back(make_shared<StepTransition>(mAnimationPlayer.get(), *mGame, mSkinnedModel->Animations().at(1), mSkinnedModel->Animations().at(0)));
-		_transitions.push_back(make_shared<LinearTransition>(mAnimationPlayer.get(), *mGame,
-			mSkinnedModel->Animations().at(0),
-			mSkinnedModel->Animations().at(1),
-			2.0f, 0));
-		_transitions.push_back(make_shared<LinearTransition>(mAnimationPlayer.get(), *mGame,
-			mSkinnedModel->Animations().at(1),
-			mSkinnedModel->Animations().at(0),
-			2.0f, 1));
-		
+<<<<<<< Updated upstream
+		_transitions.push_back(make_shared<StepTransition>(mAnimationPlayer.get(), *mGame, mSkinnedModel->Animations().at(0), mSkinnedModel->Animations().at(1)));
+		_transitions.push_back(make_shared<StepTransition>(mAnimationPlayer.get(), *mGame, mSkinnedModel->Animations().at(1), mSkinnedModel->Animations().at(0)));
+		//_transitions.push_back(make_shared<LinearTransition>(mAnimationPlayer.get(), *mGame,
+		//	mSkinnedModel->Animations().at(1),
+		//	mSkinnedModel->Animations().at(0),
+		//	2.0f, 0));
+		//_transitions.push_back(make_shared<LinearTransition>(mAnimationPlayer.get(), *mGame,
+		//	mSkinnedModel->Animations().at(0),
+		//	mSkinnedModel->Animations().at(1),
+		//	2.0f, 0));
 
-		for (auto& t : _transitions) {
-			t->Initialize();
-		}
+		
+=======
+		_stateMachine = StateMachineGenerator::CreateStateMachine(mAnimationPlayer.get(), *mGame, "Test.json");
+		_stateMachine->Initialize();
+>>>>>>> Stashed changes
 
 		mProxyModel = make_unique<ProxyModel>(*mGame, mCamera, "Models\\DirectionalLightProxy.obj.bin"s, 0.5f);
 		mProxyModel->Initialize();
@@ -99,35 +100,18 @@ namespace Animation {
 
 	void Animator::Update(const Library::GameTime& time)
 	{
-		for (const shared_ptr<Transition>& t : _transitions) {
-
-			t->Update(time);
-		}
-		
+<<<<<<< Updated upstream
+=======
+		_stateMachine->Update(time);
+>>>>>>> Stashed changes
 		AnimationDemo::Update(time);
-		
-	}
-	const std::vector<std::shared_ptr<Transition>>& Animator::Transitions()
-	{
-		return _transitions;
 	}
 	void Animator::Draw(const Library::GameTime& time)
 	{
-		if (mUpdateMaterial)
-		{
-			const XMMATRIX worldMatrix = XMLoadFloat4x4(&mWorldMatrix);
-			const XMMATRIX wvp = XMMatrixTranspose(worldMatrix * mCamera->ViewProjectionMatrix());
-			mMaterial->UpdateTransforms(wvp, XMMatrixTranspose(worldMatrix));
-			mUpdateMaterial = false;
-		}
-
-		if (mUpdateMaterialBoneTransforms)
-		{
-			mMaterial->UpdateBoneTransforms(mAnimationPlayer->BoneTransforms());
-			mUpdateMaterialBoneTransforms = false;
-		}
-
-		mMaterial->DrawIndexed(not_null<ID3D11Buffer*>(mVertexBuffer.get()), not_null<ID3D11Buffer*>(mIndexBuffer.get()), mIndexCount);
-		mProxyModel->Draw(time);
+		AnimationDemo::Draw(time);
+	}
+	const StateMachine& Animator::GetStateMachine()
+	{
+		return *_stateMachine;
 	}
 }

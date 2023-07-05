@@ -30,12 +30,14 @@ namespace Animation {
 		auto camera = std::make_shared<PerspectiveCamera>(*this, 90.f, .75f, 1.0f, 20.0f);
 		mComponents.push_back(camera);
 		mServices.AddService(Camera::TypeIdClass(), camera.get());
-
 		demo = make_shared<Animator>(*this, camera);
 		mComponents.push_back(demo);
 
 		Game::Initialize();
 
+		for (const shared_ptr<Transition>& t : demo->Transitions()) {
+			mComponents.push_back(t);
+		}
 
 		
 		camera->SetPosition(0.0f, 3.0f, 5.0f);
@@ -59,15 +61,7 @@ namespace Animation {
 		}
 	}
 	void AnimationGame::Update(const Library::GameTime& time) {
-		if (mKeyboard->WasKeyPressedThisFrame(Keys::S)) {
-			for (const shared_ptr<Transition>& t : demo->Transitions()) {
-				if (t.get()->Run()) {
-					break;
-				}
-			}
-		}
 		Game::Update(time);
-		
 	}
 	void AnimationGame::Run() {
 		Game::Run();

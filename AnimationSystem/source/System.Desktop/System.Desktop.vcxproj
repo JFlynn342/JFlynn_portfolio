@@ -23,8 +23,6 @@
     <ClCompile Include="..\Library.Desktop\UtilityWin32.cpp" />
     <ClCompile Include="AnimationGame.cpp" />
     <ClCompile Include="Animator.cpp" />
-    <ClCompile Include="BezierCurve.cpp" />
-    <ClCompile Include="BezierTransition.cpp" />
     <ClCompile Include="LinearTransition.cpp" />
     <ClCompile Include="Program.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
@@ -32,18 +30,22 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="StateMachine.cpp" />
+    <ClCompile Include="StateMachineGenerator.cpp" />
     <ClCompile Include="StepTransition.cpp" />
     <ClCompile Include="Transition.cpp" />
+    <ClCompile Include="TransitionRule.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Library.Desktop\UtilityWin32.h" />
     <ClInclude Include="AnimationGame.h" />
     <ClInclude Include="Animator.h" />
-    <ClInclude Include="BezierCurve.h" />
-    <ClInclude Include="BezierTransition.h" />
     <ClInclude Include="LinearTransition.h" />
+    <ClInclude Include="StateMachine.h" />
+    <ClInclude Include="StateMachineGenerator.h" />
     <ClInclude Include="StepTransition.h" />
     <ClInclude Include="Transition.h" />
+    <ClInclude Include="TransitionRule.h" />
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="content\Models\DirectionalLightProxy.obj.bin">
@@ -159,6 +161,11 @@
     <ProjectReference Include="..\Library.Desktop\Library.Desktop.vcxproj">
       <Project>{ac77ecf1-1a7c-4399-b24a-78090042e3cb}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="Test.json">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
