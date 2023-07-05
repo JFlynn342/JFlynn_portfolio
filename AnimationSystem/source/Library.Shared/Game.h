@@ -23,10 +23,13 @@
 #include "RenderTarget.h"
 #include "ContentManager.h"
 
+namespace Animation {
+	class StateMachineGenerator;
+}
 namespace Library
 {
 	class GameComponent;
-
+	
 	class IDeviceNotify
 	{
 	public:
@@ -44,6 +47,7 @@ namespace Library
 		RTTI_DECLARATIONS(Game, RenderTarget)
 
     public:
+		friend Animation::StateMachineGenerator;
         Game(std::function<void*()> getWindowCallback, std::function<void(SIZE&)> getRenderTargetSizeCallback);
 		Game(const Game&) = delete;
 		Game& operator=(const Game&) = delete;

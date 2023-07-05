@@ -6,7 +6,8 @@ using namespace DirectX;
 namespace Animation {
 	BezierTransition::BezierTransition(Library::AnimationPlayer* player, Library::Game& game, const std::shared_ptr<Library::AnimationClip>& from, const std::shared_ptr<Library::AnimationClip>& to, float duration, uint32_t keyframe, const BezierCurve& curve):
 		Transition(player, game, from, to), _duration{ duration }, _targetKeyframe{ keyframe }, _curve{ curve } {
-
+		_targetPose.resize(_player->mModel->Bones().size());
+		_originPose.resize(_player->mModel->Bones().size());
 	}
 	bool BezierTransition::Run() {
 		if (_player->CurrentClip() == _start && !_active) {

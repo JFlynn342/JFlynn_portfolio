@@ -11,6 +11,18 @@
     <Filter Include="Source\Rendering">
       <UniqueIdentifier>{cdb04002-a5b8-4faf-b19d-f97e846b8bd4}</UniqueIdentifier>
     </Filter>
+<<<<<<< Updated upstream
+=======
+    <Filter Include="Source\Utility">
+      <UniqueIdentifier>{90c1c8b6-074e-4ffc-8998-3d6df6487927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Transitions">
+      <UniqueIdentifier>{45886ed6-04f2-4688-a0f4-2d2dc7678bda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Transitions\Logic">
+      <UniqueIdentifier>{a1575e8b-f554-4391-8868-3c4ae9d5fc1c}</UniqueIdentifier>
+    </Filter>
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Transition.cpp">
@@ -32,6 +44,15 @@
     <ClCompile Include="StepTransition.cpp">
       <Filter>Source\Rendering</Filter>
     </ClCompile>
+    <ClCompile Include="TransitionRule.cpp">
+      <Filter>Source\Transitions\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMachine.cpp">
+      <Filter>Source\Transitions\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMachineGenerator.cpp">
+      <Filter>Source\Transitions\Logic</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StepTransition.h">
@@ -49,7 +70,34 @@
     <ClInclude Include="..\Library.Desktop\UtilityWin32.h">
       <Filter>Source\Rendering</Filter>
     </ClInclude>
+<<<<<<< Updated upstream
     <ClInclude Include="LinearTransition.h" />
+=======
+    <ClInclude Include="LinearTransition.h">
+      <Filter>Source\Transitions</Filter>
+    </ClInclude>
+    <ClInclude Include="StepTransition.h">
+      <Filter>Source\Transitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Transition.h">
+      <Filter>Source\Transitions</Filter>
+    </ClInclude>
+    <ClInclude Include="BezierCurve.h">
+      <Filter>Source\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="BezierTransition.h">
+      <Filter>Source\Transitions</Filter>
+    </ClInclude>
+    <ClInclude Include="TransitionRule.h">
+      <Filter>Source\Transitions\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine.h">
+      <Filter>Source\Transitions\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachineGenerator.h">
+      <Filter>Source\Transitions\Logic</Filter>
+    </ClInclude>
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="content\Models\DirectionalLightProxy.obj.bin">
@@ -96,6 +144,9 @@
     </CopyFileToFolders>
     <CopyFileToFolders Include="content\Shaders\TexturedQuadPassThroughVS.cso">
       <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Test.json">
+      <Filter>Source\Transitions\Logic</Filter>
     </CopyFileToFolders>
   </ItemGroup>
 </Project>

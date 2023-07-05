@@ -61,13 +61,6 @@ namespace Animation {
 		}
 	}
 	void AnimationGame::Update(const Library::GameTime& time) {
-		if (mKeyboard->WasKeyPressedThisFrame(Keys::S)) {
-			for (const shared_ptr<Transition>& t : demo->Transitions()) {
-				if (t.get()->Run()) {
-					break;
-				}
-			}
-		}
 		Game::Update(time);
 	}
 	void AnimationGame::Run() {

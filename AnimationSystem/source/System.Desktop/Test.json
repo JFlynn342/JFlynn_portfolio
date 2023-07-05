@@ -1,0 +1,50 @@
+{
+  "States": [
+    {
+      "Name":"Walk",
+      "IsEntry": 1,
+      "Clip:": 0
+    },
+    {
+      "Name": "Idle",
+      "IsEntry": 0,
+      "Clip": 1
+    }
+    
+  ],
+  "Links": [
+    {
+      "Origin": "Idle",
+      "Target": "Walk",
+      "Transition":{
+        "Class": "Linear",
+        "Duration": 2.0,
+        "EndFrame": 1
+      }
+
+    },
+    {
+      "Origin": "Walk",
+      "Target": "Idle",
+      "Transition":{
+        "Class": "Bezier",
+        "Duration": 2.0,
+        "EndFrame": 0,
+        "Points":[
+          {
+            "Position": 0.0,
+            "Value": 0.0
+          },
+          {
+            "Position": 0.25,
+            "Value": 1.0
+          },
+          {
+            "Position": 1.0,
+            "Value": 1.0
+          }
+        ]
+      }
+    }
+  ]
+}

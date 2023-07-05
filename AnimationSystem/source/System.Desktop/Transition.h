@@ -1,6 +1,7 @@
 #pragma once
 #include "GameComponent.h"
 #include "AnimationPlayer.h"
+#include "TransitionRule.h"
 namespace Animation {
 	/// <summary>
 	/// a link between two AnimationClips that facilitates changing from one clip to the other
@@ -40,6 +41,7 @@ namespace Animation {
 		/// the target clip
 		/// </summary>
 		std::shared_ptr<Library::AnimationClip> _end;
+
 		bool _active = false;
 	};
 }
