@@ -72,7 +72,7 @@ namespace Animation {
 			/// <summary>
 			/// the AnimationClip used by this State
 			/// </summary>
-			const std::shared_ptr<Library::AnimationClip> _clip;
+			std::shared_ptr<Library::AnimationClip> _clip;
 			/// <summary>
 			/// all of the StateLinks originating from this State
 			/// </summary>

@@ -34,11 +34,6 @@ namespace Animation {
 		mComponents.push_back(demo);
 
 		Game::Initialize();
-
-		for (const shared_ptr<Transition>& t : demo->Transitions()) {
-			mComponents.push_back(t);
-		}
-
 		
 		camera->SetPosition(0.0f, 3.0f, 5.0f);
 	}

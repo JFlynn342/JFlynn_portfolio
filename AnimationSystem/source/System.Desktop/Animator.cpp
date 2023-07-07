@@ -66,23 +66,8 @@ namespace Animation {
 		mMaterial->UpdateBoneTransforms(mAnimationPlayer->BoneTransforms());
 		mAnimationPlayer->CurrentClip();
 	   
-<<<<<<< Updated upstream
-		_transitions.push_back(make_shared<StepTransition>(mAnimationPlayer.get(), *mGame, mSkinnedModel->Animations().at(0), mSkinnedModel->Animations().at(1)));
-		_transitions.push_back(make_shared<StepTransition>(mAnimationPlayer.get(), *mGame, mSkinnedModel->Animations().at(1), mSkinnedModel->Animations().at(0)));
-		//_transitions.push_back(make_shared<LinearTransition>(mAnimationPlayer.get(), *mGame,
-		//	mSkinnedModel->Animations().at(1),
-		//	mSkinnedModel->Animations().at(0),
-		//	2.0f, 0));
-		//_transitions.push_back(make_shared<LinearTransition>(mAnimationPlayer.get(), *mGame,
-		//	mSkinnedModel->Animations().at(0),
-		//	mSkinnedModel->Animations().at(1),
-		//	2.0f, 0));
-
-		
-=======
 		_stateMachine = StateMachineGenerator::CreateStateMachine(mAnimationPlayer.get(), *mGame, "Test.json");
 		_stateMachine->Initialize();
->>>>>>> Stashed changes
 
 		mProxyModel = make_unique<ProxyModel>(*mGame, mCamera, "Models\\DirectionalLightProxy.obj.bin"s, 0.5f);
 		mProxyModel->Initialize();
@@ -100,10 +85,8 @@ namespace Animation {
 
 	void Animator::Update(const Library::GameTime& time)
 	{
-<<<<<<< Updated upstream
-=======
+
 		_stateMachine->Update(time);
->>>>>>> Stashed changes
 		AnimationDemo::Update(time);
 	}
 	void Animator::Draw(const Library::GameTime& time)
