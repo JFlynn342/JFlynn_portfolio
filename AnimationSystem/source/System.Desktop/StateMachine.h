@@ -100,7 +100,7 @@ namespace Animation {
 		};
 	private:
 		/// <summary>
-		/// all of the States in this STateMachine
+		/// all of the States in this StateMachine
 		/// </summary>
 		std::unordered_map <std::string, State> _states;
 		/// <summary>

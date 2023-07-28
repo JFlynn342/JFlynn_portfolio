@@ -18,6 +18,7 @@
 #include "LinearTransition.h"
 #include "BezierTransition.h"
 #include <vector>
+#include <json/json.h>
 
 using namespace Library;
 using namespace Rendering;
@@ -30,6 +31,7 @@ bool NoTransitionsActive(Animation::Animator& animator) {
 	return animator.GetStateMachine().CurrentState() != nullptr;
 }
 
+// this is a compensator for not being able to get multiple animations on the same file
 void ModifyContent(Model& model) {
 	AnimationClipData TPose;
 	TPose.TicksPerSecond = 1.0f;
@@ -49,15 +51,28 @@ namespace Animation {
 
 	void Animator::Initialize()
 	{
+		std::ifstream filestream("Test.json", std::ios::binary);
+		Json::Value root;
+		filestream >> root;
 		auto direct3DDevice = mGame->Direct3DDevice();
-		mSkinnedModel = mGame->Content().Load<Model>(L"Models\\RunningSoldier.dae.bin"s);
+		std::string ms = root["Model"].asString();
+		std::wstring mws;
+		for (const char& c : ms) {
+			mws.push_back(wchar_t(c));
+		}
+		mSkinnedModel = mGame->Content().Load<Model>(mws);
 		ModifyContent(*mSkinnedModel);
 		Mesh* mesh = mSkinnedModel->Meshes().at(0).get();
 		VertexSkinnedPositionTextureNormal::CreateVertexBuffer(direct3DDevice, *mesh, not_null<ID3D11Buffer**>(mVertexBuffer.put()));
 		mesh->CreateIndexBuffer(*direct3DDevice, not_null<ID3D11Buffer**>(mIndexBuffer.put()));
 		mIndexCount = narrow<uint32_t>(mesh->Indices().size());
 
-		auto texture = mGame->Content().Load<Texture2D>(L"Textures\\Soldier.png"s);
+		std::string ts = root["Texture"].asString();
+		std::wstring tws;
+		for (const char& c : ts) {
+			tws.push_back(wchar_t(c));
+		}
+		auto texture = mGame->Content().Load<Texture2D>(tws);
 		mMaterial = make_shared<SkinnedModelMaterial>(*mGame, texture);
 		mMaterial->Initialize();
 
@@ -80,7 +95,7 @@ namespace Animation {
 		mCamera->AddViewMatrixUpdatedCallback(updateMaterialFunc);
 		mCamera->AddProjectionMatrixUpdatedCallback(updateMaterialFunc);
 
-		XMStoreFloat4x4(&mWorldMatrix, XMMatrixScaling(0.05f, 0.05f, 0.05f));
+		XMStoreFloat4x4(&mWorldMatrix, XMMatrixScaling(.05f, .05f, .05f));
 	}
 
 	void Animator::Update(const Library::GameTime& time)

@@ -25,6 +25,7 @@
     <ClCompile Include="Animator.cpp" />
     <ClCompile Include="BezierCurve.cpp" />
     <ClCompile Include="BezierTransition.cpp" />
+    <ClCompile Include="BlendTransition.cpp" />
     <ClCompile Include="LinearTransition.cpp" />
     <ClCompile Include="Program.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
@@ -44,6 +45,7 @@
     <ClInclude Include="Animator.h" />
     <ClInclude Include="BezierCurve.h" />
     <ClInclude Include="BezierTransition.h" />
+    <ClInclude Include="BlendTransition.h" />
     <ClInclude Include="LinearTransition.h" />
     <ClInclude Include="StateMachine.h" />
     <ClInclude Include="StateMachineGenerator.h" />
@@ -169,6 +171,23 @@
   <ItemGroup>
     <CopyFileToFolders Include="Test.json">
       <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="content\Models\Person.dae.bin">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)content\Models</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)content\Models</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)content\Models</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)content\Models</DestinationFolders>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="content\Textures\blue.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)content\Textures</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)content\Textures</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)content\Textures</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)content\Textures</DestinationFolders>
     </CopyFileToFolders>
   </ItemGroup>
   <PropertyGroup Label="Globals">

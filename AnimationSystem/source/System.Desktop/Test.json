@@ -1,4 +1,6 @@
 {
+  "Model": "Models\\Person.dae.bin",
+  "Texture": "Textures\\blue.png",
   "States": [
     {
       "Name":"Walk",

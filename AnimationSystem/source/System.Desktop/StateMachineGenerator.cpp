@@ -13,12 +13,15 @@ namespace Animation {
     std::shared_ptr<StateMachine> StateMachineGenerator::CreateStateMachine(Library::AnimationPlayer* player, Library::Game& game, std::string file)
     {
         std::shared_ptr<StateMachine> newSM = std::make_shared<StateMachine>(player, game);
+        // preparing to parse
         std::ifstream filestream(file, std::ios::binary);
         Json::Value root;
         filestream >> root;
+        // initializing states
         for (Json::Value value : root["States"]) {
             newSM->AddState(value["Name"].asString(), player->GetModel()->Animations()[value["Clip"].asInt()]);
         }
+        // linking states
         for (Json::Value value : root["Links"]) {
             std::shared_ptr<Transition> t;
             if (value["Transition"]["Class"] == "Step") {

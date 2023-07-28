@@ -9,6 +9,7 @@
 namespace Animation {
 	class LinearTransition;
 	class BezierTransition;
+	class BlendTransition;
 }
 namespace Library
 {
@@ -24,6 +25,7 @@ namespace Library
     public:  
 		friend class Animation::LinearTransition;
 		friend class Animation::BezierTransition;
+		friend class Animation::BlendTransition;
 		AnimationPlayer(Game& game, std::shared_ptr<Model> model, bool interpolationEnabled = true);
 		AnimationPlayer(const AnimationPlayer&) = default;
 		AnimationPlayer(AnimationPlayer&&) = default;

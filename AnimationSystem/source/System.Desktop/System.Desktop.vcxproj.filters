@@ -13,6 +13,7 @@
     <ClCompile Include="TransitionRule.cpp" />
     <ClCompile Include="BezierCurve.cpp" />
     <ClCompile Include="BezierTransition.cpp" />
+    <ClCompile Include="BlendTransition.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Library.Desktop\UtilityWin32.h" />
@@ -26,6 +27,7 @@
     <ClInclude Include="TransitionRule.h" />
     <ClInclude Include="BezierCurve.h" />
     <ClInclude Include="BezierTransition.h" />
+    <ClInclude Include="BlendTransition.h" />
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="content\Models\DirectionalLightProxy.obj.bin" />
@@ -44,5 +46,7 @@
     <CopyFileToFolders Include="content\Shaders\TexturedModelVS.cso" />
     <CopyFileToFolders Include="content\Shaders\TexturedQuadPassThroughVS.cso" />
     <CopyFileToFolders Include="Test.json" />
+    <CopyFileToFolders Include="content\Models\Person.dae.bin" />
+    <CopyFileToFolders Include="content\Textures\blue.png" />
   </ItemGroup>
 </Project>
