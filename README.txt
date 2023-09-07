@@ -9,4 +9,6 @@ controller from scratch (PlayerBase.cs).
 
 The Fiea Game Engine is another custom game engine project that I worked on in UCF's Interactive Entertainment MS program. 
 It differs from my undergraduate game engine project in that I both rewrote several standard library containers, including vector and unordered_map, 
-and implemented support for data-driven scripting through a custom JSON parser.
+and implemented support for data-driven scripting through a custom JSON parser. Through this project, I learned a lot about C++ general best practices, including how to manage heap-allocated data, avoiding unintentional copies, and using smart pointers for deterministic finalization.
+
+The Custom Animation System project is a project I developed to leverage and extend code from Dr. Paul Varcholik's "Real Time 3D Rendering with DirectX and HLSL" book (with permission) in order to develop a system that could facilitate real-time interpolative blending between separate animation clips on a single 3D model.  I decided to embark on this project because of my passion for real-time animation systems and the way that they empower creatives by bringing their work to life. This project helped me get a proper understanding of both linear algebra and some surface-level rendering concepts, including hierarchical transforms and projection matrices.
